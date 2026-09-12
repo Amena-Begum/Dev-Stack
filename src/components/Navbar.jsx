@@ -78,7 +78,7 @@ function Navbar() {
                         ))}
                     </div>
 
-                    {/* Authentication Buttons */}
+                    {/*Buttons*/}
                     <div className="flex items-center gap-3">
                         <button className="text-sm font-medium text-gray-700 hover:text-gray-950 transition-colors">
                             Sign In
