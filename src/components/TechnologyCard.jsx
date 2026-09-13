@@ -28,9 +28,10 @@ function TechnologyCard({ technology, onAdd, isAdded }) {
 
                 {/* Badge */}
                 <span
-                    className="px-3 py-1 rounded-full text-xs font-semibold text-white whitespace-nowrap"
+                    className="px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap"
                     style={{
-                        background: "var(--brand-gradient)",
+                        color: technology.badgeColor,
+                        backgroundColor: `${technology.badgeColor}20`,
                     }}
                 >
                     {technology.badge}
@@ -73,16 +74,9 @@ function TechnologyCard({ technology, onAdd, isAdded }) {
                 onClick={() => onAdd(technology)}
                 disabled={isAdded}
                 className={`w-full mt-6 py-3 rounded-xl text-sm font-semibold transition-all ${isAdded
-                        ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                        : "text-white hover:opacity-90"
+                        ? "bg-gray-200 text-gray-500 cursor-not-allowed"
+                        : "bg-black text-white hover:bg-gray-800"
                     }`}
-                style={
-                    !isAdded
-                        ? {
-                            background: "var(--brand-gradient)",
-                        }
-                        : undefined
-                }
             >
                 {isAdded ? "✓ Added to Stack" : "Add to Stack"}
             </button>
