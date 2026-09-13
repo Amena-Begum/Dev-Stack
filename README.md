@@ -10,7 +10,7 @@ Users can explore technologies, check their category, difficulty, rating, and ad
 
 ## 📦 GitHub Repository
 
-[GitHub Repository](YOUR_GITHUB_REPOSITORY_LINK_HERE)
+[GitHub Repository]([YOUR_GITHUB_REPOSITORY_LINK_HERE](https://github.com/Amena-Begum/Dev-Stack))
 
 ---
 
