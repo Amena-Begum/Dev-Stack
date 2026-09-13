@@ -38,7 +38,7 @@ function TechnologyCard({ technology, onAdd, isAdded }) {
             </div>
 
             {/* Description */}
-            <p className="mt-5 text-sm leading-6 text-gray-600 min-h-[72px]">
+            <p className="mt-5 text-sm leading-6 text-gray-600 min-h-[72]">
                 {technology.description}
             </p>
 

@@ -8,7 +8,7 @@ function Hero() {
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div className="min-h-[600px] grid grid-cols-1 lg:grid-cols-2 items-center gap-12 py-16 lg:py-20">
+                <div className="min-h-[600] grid grid-cols-1 lg:grid-cols-2 items-center gap-12 py-16 lg:py-20">
 
                     {/* Left Content */}
                     <div className="text-center lg:text-left">
