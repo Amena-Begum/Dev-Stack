@@ -49,10 +49,11 @@ JSX stands for JavaScript XML. It allows us to write HTML-like code inside JavaS
 It makes React components easier to write and understand.
 
 Example:
-
+```jsx
 function App() {
   return <h1>Hello React</h1>;
 }
+```
 ## 2. What is the difference between props and state?
 
 Props are used to pass data from a parent component to a child component.
