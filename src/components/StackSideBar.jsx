@@ -1,4 +1,8 @@
-function StackSideBar({ selectedTechnologies }) {
+function StackSideBar({
+  selectedTechnologies,
+  onRemove,
+  onRemoveAll,
+}) {
   return (
     <aside className="border border-gray-200 rounded-2xl bg-white p-6 sticky top-24">
 
@@ -9,7 +13,7 @@ function StackSideBar({ selectedTechnologies }) {
         </h2>
 
         <span className="text-sm text-gray-500">
-          {selectedTechnologies.length} Selected
+          {selectedTechnologies.length} Technology Selected
         </span>
       </div>
 
@@ -27,6 +31,7 @@ function StackSideBar({ selectedTechnologies }) {
       ) : (
         <div className="mt-6 space-y-3">
 
+          {/* Selected Technologies */}
           {selectedTechnologies.map((technology) => (
             <div
               key={technology.id}
@@ -42,7 +47,7 @@ function StackSideBar({ selectedTechnologies }) {
                 />
               </div>
 
-              {/* Info */}
+              {/* Information */}
               <div className="flex-1 min-w-0">
                 <h3 className="font-semibold text-sm text-gray-900 truncate">
                   {technology.name}
@@ -53,9 +58,11 @@ function StackSideBar({ selectedTechnologies }) {
                 </p>
               </div>
 
-              {/* Remove Button */}
+              {/* Remove */}
               <button
-                className="w-7 h-7 rounded-full text-gray-500 hover:bg-gray-100 hover:text-red-500 transition"
+                onClick={() => onRemove(technology.id)}
+                className="w-7 h-7 rounded-full text-gray-500 hover:bg-red-50 hover:text-red-500 transition"
+                aria-label={`Remove ${technology.name}`}
               >
                 ✕
               </button>
@@ -65,6 +72,7 @@ function StackSideBar({ selectedTechnologies }) {
 
           {/* Remove All */}
           <button
+            onClick={onRemoveAll}
             className="w-full mt-3 py-2.5 rounded-xl border border-gray-300 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition"
           >
             Remove All
