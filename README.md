@@ -6,7 +6,7 @@ Users can explore technologies, check their category, difficulty, rating, and ad
 
 ## 🌐 Live Site
 
-[Live Demo](YOUR_LIVE_LINK_HERE)
+https://dev-stack123.netlify.app/
 
 ## 📦 GitHub Repository
 
