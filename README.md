@@ -1,16 +1,57 @@
-# React + Vite
+# 🚀 Dev Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Dev Stack is a modern React-based web application that helps developers explore different technologies and build their own development stack.
 
-Currently, two official plugins are available:
+Users can explore technologies, check their category, difficulty, rating, and add their favorite technologies to a personalized stack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Site
 
-## React Compiler
+[Live Demo](YOUR_LIVE_LINK_HERE)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 GitHub Repository
 
-## Expanding the Oxlint configuration
+[GitHub Repository](YOUR_GITHUB_REPOSITORY_LINK_HERE)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+## 🛠️ Technologies Used
+
+- React.js
+- JavaScript (ES6+)
+- Tailwind CSS
+- React-Toastify
+- JSON
+- Vite
+
+---
+
+## ✨ Features
+
+### 1. Explore Technologies
+
+Users can explore different frontend, backend, database, language, styling, DevOps, and tool technologies with their description, difficulty, rating, and category.
+
+### 2. Build Your Own Stack
+
+Users can add technologies to the "Your Stack" section and create their own personalized development stack.
+
+### 3. Stack Management
+
+Users can remove individual technologies or remove all technologies from their stack. Toast notifications are also shown for add, duplicate, remove, and remove-all actions.
+
+---
+
+# 📚 React Questions & Answers
+
+## 1. What is JSX, and why is it used in React?
+
+JSX stands for JavaScript XML. It allows us to write HTML-like code inside JavaScript.
+
+It makes React components easier to write and understand.
+
+Example:
+
+```jsx
+function App() {
+  return <h1>Hello React</h1>;
+}
