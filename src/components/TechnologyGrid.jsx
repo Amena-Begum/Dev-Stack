@@ -1,3 +1,6 @@
+const [technologies, setTechnologies] = useState([]);
+const [loading, setLoading] = useState(true);
+
 function TechnologyGrid() {
   return (
     <div>
