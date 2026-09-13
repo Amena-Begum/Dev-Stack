@@ -68,7 +68,7 @@ function App() {
         <Hero />
 
         <section className="max-w-7xl mx-auto px-4 py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-6">
 
             {/* Technology Section */}
             <div>
