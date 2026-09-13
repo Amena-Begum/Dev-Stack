@@ -55,3 +55,10 @@ Example:
 function App() {
   return <h1>Hello React</h1>;
 }
+
+## 2. What is the difference between props and state?
+🇬🇧 English Answer
+
+Props are used to pass data from a parent component to a child component.
+
+State is used to store and manage data inside a component that can change over time.
