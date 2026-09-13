@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -16,7 +17,7 @@ function App() {
     );
 
     if (alreadyAdded) {
-      alert(`${technology.name} is already in your stack!`);
+      toast.warning(`${technology.name} is already in your stack!`);
       return;
     }
 
@@ -24,22 +25,43 @@ function App() {
       ...previous,
       technology,
     ]);
-  };
 
+    toast.success(`${technology.name} added to your stack!`);
+  };
   // Remove one technology
   const removeFromStack = (id) => {
+    const technology = selectedTechnologies.find(
+      (item) => item.id === id
+    );
+
     setSelectedTechnologies((previous) =>
       previous.filter((technology) => technology.id !== id)
     );
-  };
 
+    if (technology) {
+      toast.info(`${technology.name} removed from your stack!`);
+    }
+  };
   // Remove all technologies
   const removeAllFromStack = () => {
+    if (selectedTechnologies.length === 0) {
+      return;
+    }
+
     setSelectedTechnologies([]);
+
+    toast.info("All technologies removed from your stack!");
   };
 
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        autoClose={2500}
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+      />
       <Navbar />
 
       <main>
